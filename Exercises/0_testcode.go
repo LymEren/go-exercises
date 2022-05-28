@@ -8,7 +8,7 @@ func main() {
 		"Brand":  "Ford",
 		"Name":   "Ali",
 		"Zorluk": "Evet"}
-
+		"Yeni" : "urun"
 	fmt.Printf("%v", mapOrnek["Brand"])
 
 }
