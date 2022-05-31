@@ -3,10 +3,10 @@ package scrabble
 import "unicode"
 
 // SCRABBLE EYYUB EREN - This is a different solution :)
-//
+
 func Score(word string) int {
 	counter := 0
-	// i used rune datatype for the for-range loop
+	// i used rune datatype
 	onePoint := []rune{'A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'}
 	twoPoint := []rune{'D', 'G'}
 	threePoint := []rune{'B', 'C', 'M', 'P'}
