@@ -26,8 +26,8 @@ func (c *Clock) String() string {
 }
 
 // Add minutes to existing Clock{}.
-func (c Clock) Add(m int) Clock {
-	return New(0, c.minutes+m)
+func (c Clock) Add(newMin int) Clock {
+	return New(0, c.minutes+newMin)
 }
 
 // Subtract minutes from existing Clock{}.
@@ -38,10 +38,10 @@ func (c Clock) Subtract(m int) Clock {
 func main() {
 
 	var London Clock = Clock{
-		minutes: 750,
+		minutes: 480,
 	}
 
-	fmt.Println(New(10, 20))
+	fmt.Println(New(8, 0))
 	fmt.Println(London.String())
 	fmt.Println(London.minutes)
 	London = London.Add(22)
