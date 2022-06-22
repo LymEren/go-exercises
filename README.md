@@ -1,1 +1,1 @@
-Golang Exercise Files - Eyyub Eren
+Golang Exercises - Eyyub Eren
