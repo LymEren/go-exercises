@@ -9,11 +9,8 @@ package main
 import "fmt"
 
 func Sieve(n int) []int {
-	// n+1 allows us to start the loop at 2
-	// without a subtracting 2 from each iteration
-	// (this just ignores indexes 0, 1)
+
 	marks := make([]bool, n+1)
-	//preallocate the array; upper bound of half (no even numbers > 2)
 	primes := make([]int, n/2)
 	pidx := 0
 	for i := 2; i <= n; i++ {
@@ -22,8 +19,6 @@ func Sieve(n int) []int {
 		}
 		primes[pidx] = i
 		pidx++
-		// walk the array by increments of the current value
-		// eliminating all multiples of i
 		for m := i; m <= n; m += i {
 			marks[m] = true
 		}
